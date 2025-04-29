@@ -28,7 +28,6 @@ class HomeView extends StatelessWidget {
                     ),
               ),
 
-      // FAB: Botão flutuante para adicionar nova tarefa
       floatingActionButton: FloatingActionButton(
         onPressed: () => _showAddTaskDialog(context),
         child: const Icon(Icons.add),
@@ -54,7 +53,7 @@ class HomeView extends StatelessWidget {
             ),
             actions: [
               TextButton(
-                onPressed: () => Navigator.of(context).pop(), // fechar modal
+                onPressed: () => Navigator.of(context).pop(),
                 child: const Text('Cancelar'),
               ),
               ElevatedButton(
@@ -65,7 +64,7 @@ class HomeView extends StatelessWidget {
                       context,
                       listen: false,
                     ).addTask(title);
-                    Navigator.of(context).pop(); // fecha o modal
+                    Navigator.of(context).pop();
                   }
                 },
                 child: const Text('Adicionar'),
