@@ -15,27 +15,25 @@ Aplicativo de lista de tarefas desenvolvido com Flutter, utilizando `Provider` p
 
 ---
 
-## 🧱 Arquitetura
+## 🧱 Estrutura do Projeto
 
-O projeto segue o padrão **MVC** com a seguinte estrutura de pastas:
-
-lib/
-├── controllers/             # C = Controller
-│   └── task_controller.dart     ← lógica da aplicação + estado
-│
-├── models/                  # M = Model
-│   └── task.dart                ← estrutura dos dados (tarefa)
-│
-├── views/                   # V = View
-│   └── home_view.dart           ← interface principal com o usuário
-│
-├── widgets/                 # Componentes reutilizáveis (parte visual)
-│   └── task_tile.dart           ← representa uma tarefa na lista
-│
-├── core/                    # Tema, constantes ou estilos globais
-│   └── app_theme.dart           ← tema customizado da aplicação
-│
-└── main.dart                # Ponto de entrada do app
+- **lib/**
+  - **controllers/**
+    - `task_controller.dart` — Lógica de negócio e gerenciamento de tarefas usando Provider.
+  
+  - **models/**
+    - `task.dart` — Modelo que representa uma tarefa.
+  
+  - **views/**
+    - `home_view.dart` — Tela principal da aplicação, onde as tarefas são listadas e manipuladas.
+  
+  - **widgets/**
+    - `task_tile.dart` — Componente visual para exibir cada tarefa na lista.
+  
+  - **core/**
+    - `app_theme.dart` — Configurações globais de tema e estilo da aplicação.
+  
+  - `main.dart` — Arquivo principal que inicializa o app e configura o Provider.
 
 ---
 
